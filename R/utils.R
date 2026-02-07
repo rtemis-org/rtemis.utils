@@ -439,25 +439,6 @@ runifmat <- function(
 } # /rtemisutils::runifmat
 
 
-#' Get rtemis version and system info
-#'
-#' @return List: rtemis version and system info, invisibly.
-#'
-#' @author EDG
-#' @export
-#'
-#' @examples
-#' rtversion()
-rtversion <- function() {
-  out <- c(
-    list(rtemis_version = as.character(packageVersion("rtemis"))),
-    as.list(Sys.info())
-  )
-  printls(out, print_class = FALSE)
-  invisible(out)
-} # /rtemisutils::rtversion
-
-
 #' Symmetric Set Difference
 #'
 #' @param x vector
