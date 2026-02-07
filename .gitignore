@@ -11,3 +11,5 @@ __dev/
 # Zed
 .zed/
 
+# R
+*.Rcheck/
