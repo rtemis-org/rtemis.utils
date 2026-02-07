@@ -1,0 +1,27 @@
+Package: rtemisutils
+Version: 0.1.0
+Title: Shared Utilities for Rtemis Packages
+Date: 2026-02-01
+Authors@R: person(given = "E.D.", family = "Gennatas", role = c("aut", "cre", "cph"), 
+    email = "gennatas@gmail.com", comment = c(ORCID = "0000-0001-9280-3609"))
+Description: Includes a collection of type-checking and text-formatting utilities as well as the
+    rtemis color system. This package is not intended for direct use by users, but rather to be
+    imported by other rtemis packages.
+License: GPL (>= 3)
+URL: https://www.rtemis.org
+BugReports: https://github.com/rtemis-org/rtemisutils/issues
+ByteCompile: yes
+Depends: R (>= 4.1.0)
+Imports: cli, data.table, grDevices, graphics, htmltools, S7, stats,
+        methods, utils
+Suggests: car, DBI, duckdb, future, gsubfn, igraph, parallelly, plotly,
+        reactable, reticulate, seqinr, testthat, timeDate
+Encoding: UTF-8
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+NeedsCompilation: no
+Packaged: 2026-02-07 21:13:03 UTC; egenn
+Author: E.D. Gennatas [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-9280-3609>)
+Maintainer: E.D. Gennatas <gennatas@gmail.com>

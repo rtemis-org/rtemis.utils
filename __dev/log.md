@@ -1,0 +1,6 @@
+# Log
+
+```sh
+gitinit.sh
+```
+

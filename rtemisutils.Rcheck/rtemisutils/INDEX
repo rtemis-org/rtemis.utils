@@ -1,0 +1,99 @@
+ansi256_to_hex          Convert ANSI 256 color code to HEX
+bold                    Make text bold
+check_dependencies      'rtemis' internal: Dependencies check
+clean_colnames          Clean column names
+clean_int               Clean integer input
+clean_names             Clean names
+col256                  Apply 256-color formatting
+col2grayscale           Color to Grayscale
+col2hex                 Convert R color to hexadecimal code
+color_adjust            Adjust HSV Color
+color_fade              Fade color towards target
+color_invertRGB         Invert Color in RGB space
+color_mix               Create an alternating sequence of graded colors
+color_op                Simple Color Operations
+color_txt_columns       Color columns of text art
+colorgrad               Color Gradient
+ddSci                   Format Numbers for Printing
+desaturate              Pastelify a color (make a color more pastel)
+df_movecolumn           Move data frame column
+drange                  Set Dynamic Range
+dt_describe             Describe data.table
+dt_inspect_types        Inspect column types
+dt_keybin_reshape       Long to wide key-value reshaping
+dt_merge                Merge data.tables
+dt_names_by_attr        List column names by attribute
+dt_nunique_perfeat      Number of unique values per feature
+dt_pctmatch             Get N and percent match of values between two
+                        columns of two data.tables
+dt_pctmissing           Get percent of missing values from every column
+dt_set_autotypes        Set column types automatically
+dt_set_clean_all        Clean column names and factor levels
+                        _*in-place*_
+dt_set_cleanfactorlevels
+                        Clean factor levels of data.table _*in-place*_
+dt_set_logical2factor   Convert data.table logical columns to factors
+export_plotly           Export plotly plot to file
+factor_NA2missing       Factor NA to "missing" level
+fct_describe            Describe factor
+filter_order            Filter order
+fmt                     Text formatting
+fmt_gradient            Gradient text
+get_loaded_pkg_version
+                        Get version of all loaded packages (namespaces)
+get_mode                Get the mode of a factor or integer
+get_output_type         Get output type
+get_vars_from_rules     Extract variable names from rules
+getnames                Get names by string matching or class
+getnamesandtypes        Get data.frame names and types
+graph_node_metrics      Node-wise (i.e. vertex-wise) graph metrics
+gray                    Gray text
+green                   Make text green
+iflengthy               Return object if it has length > 0
+index_col_by_attr       Index columns by attribute name & value
+init_project_dir        Initialize Project Directory
+inspect_type            Inspect character and factor vector
+is_constant             Check if vector is constant
+is_discrete             Check if variable is discrete (factor or
+                        integer)
+italic                  Make text italic
+labelify                Format text for label printing
+list2csv                Write list elements to CSV files
+lotri2edgeList          Connectivity Matrix to Edge List
+make_path               Expand, normalize, concatenate, clean path
+matchcases              Match cases by covariates
+mgetnames               Get names by string matching multiple patterns
+msg                     Message with provenance
+msgdatetime             Message datetime()
+msgdone                 msgdone
+msgstart                msgstart
+muted                   Muted text
+names_by_class          List column names by class
+orange                  Make text orange
+pcat                    Pad-cat
+previewcolor            Preview color
+qstat                   SGE qstat
+recycle                 Recycle values of vector to match length of
+                        target
+rnormmat                Random Normal Matrix
+rt_letters              Construct an n-length vector of letters
+rt_reactable            View table using reactable
+rtemis_colors           rtemis Color System
+rtemisutils-package     'rtemisutils': Rtemis Utilities
+rtpalette               Color Palettes
+rtversion               Get rtemis version and system info
+rules2medmod            Convert rules from cutoffs to median/mode and
+                        range
+runifmat                Random Uniform Matrix
+setdiffsym              Symmetric Set Difference
+sge_submit              Submit expression to SGE grid
+show_pad                Add padding
+show_range              Print range of continuous variable
+size                    Size of object
+table_column_attr       Tabulate column attributes
+thin                    Make text thin/light
+underline               Make text underlined
+uniprot_get             Get protein sequence from UniProt
+uniquevalsperfeat       Unique values per feature
+vec2df                  Vector to data.frame
+xtdescribe              Describe longitudinal dataset

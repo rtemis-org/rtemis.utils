@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Shared Utilities for Rtemis Packages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container">
+<h1> Shared Utilities for Rtemis Packages
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]">
+</h1>
+<hr>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]"></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]"></a>
+</div><h2>Documentation for package &lsquo;rtemisutils&rsquo; version 0.1.0</h2>
+
+<ul><li><a href="../DESCRIPTION" type="text/plain; charset=utf-8">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="rtemisutils-package.html">rtemisutils-package</a></td>
+<td>'rtemisutils': Rtemis Utilities</td></tr>
+<tr><td style="width: 25%;"><a href="ansi256_to_hex.html">ansi256_to_hex</a></td>
+<td>Convert ANSI 256 color code to HEX</td></tr>
+<tr><td style="width: 25%;"><a href="bold.html">bold</a></td>
+<td>Make text bold</td></tr>
+<tr><td style="width: 25%;"><a href="check_dependencies.html">check_dependencies</a></td>
+<td>'rtemis' internal: Dependencies check</td></tr>
+<tr><td style="width: 25%;"><a href="clean_colnames.html">clean_colnames</a></td>
+<td>Clean column names</td></tr>
+<tr><td style="width: 25%;"><a href="clean_int.html">clean_int</a></td>
+<td>Clean integer input</td></tr>
+<tr><td style="width: 25%;"><a href="clean_names.html">clean_names</a></td>
+<td>Clean names</td></tr>
+<tr><td style="width: 25%;"><a href="col256.html">col256</a></td>
+<td>Apply 256-color formatting</td></tr>
+<tr><td style="width: 25%;"><a href="col2grayscale.html">col2grayscale</a></td>
+<td>Color to Grayscale</td></tr>
+<tr><td style="width: 25%;"><a href="col2hex.html">col2hex</a></td>
+<td>Convert R color to hexadecimal code</td></tr>
+<tr><td style="width: 25%;"><a href="colorgrad.html">colorgrad</a></td>
+<td>Color Gradient</td></tr>
+<tr><td style="width: 25%;"><a href="color_adjust.html">color_adjust</a></td>
+<td>Adjust HSV Color</td></tr>
+<tr><td style="width: 25%;"><a href="color_fade.html">color_fade</a></td>
+<td>Fade color towards target</td></tr>
+<tr><td style="width: 25%;"><a href="color_invertRGB.html">color_invertRGB</a></td>
+<td>Invert Color in RGB space</td></tr>
+<tr><td style="width: 25%;"><a href="color_mix.html">color_mix</a></td>
+<td>Create an alternating sequence of graded colors</td></tr>
+<tr><td style="width: 25%;"><a href="color_op.html">color_op</a></td>
+<td>Simple Color Operations</td></tr>
+<tr><td style="width: 25%;"><a href="color_txt_columns.html">color_txt_columns</a></td>
+<td>Color columns of text art</td></tr>
+<tr><td style="width: 25%;"><a href="ddSci.html">ddSci</a></td>
+<td>Format Numbers for Printing</td></tr>
+<tr><td style="width: 25%;"><a href="desaturate.html">desaturate</a></td>
+<td>Pastelify a color (make a color more pastel)</td></tr>
+<tr><td style="width: 25%;"><a href="df_movecolumn.html">df_movecolumn</a></td>
+<td>Move data frame column</td></tr>
+<tr><td style="width: 25%;"><a href="drange.html">drange</a></td>
+<td>Set Dynamic Range</td></tr>
+<tr><td style="width: 25%;"><a href="dt_describe.html">dt_describe</a></td>
+<td>Describe data.table</td></tr>
+<tr><td style="width: 25%;"><a href="dt_inspect_types.html">dt_inspect_types</a></td>
+<td>Inspect column types</td></tr>
+<tr><td style="width: 25%;"><a href="dt_keybin_reshape.html">dt_keybin_reshape</a></td>
+<td>Long to wide key-value reshaping</td></tr>
+<tr><td style="width: 25%;"><a href="dt_merge.html">dt_merge</a></td>
+<td>Merge data.tables</td></tr>
+<tr><td style="width: 25%;"><a href="dt_names_by_attr.html">dt_names_by_attr</a></td>
+<td>List column names by attribute</td></tr>
+<tr><td style="width: 25%;"><a href="dt_nunique_perfeat.html">dt_nunique_perfeat</a></td>
+<td>Number of unique values per feature</td></tr>
+<tr><td style="width: 25%;"><a href="dt_pctmatch.html">dt_pctmatch</a></td>
+<td>Get N and percent match of values between two columns of two data.tables</td></tr>
+<tr><td style="width: 25%;"><a href="dt_pctmissing.html">dt_pctmissing</a></td>
+<td>Get percent of missing values from every column</td></tr>
+<tr><td style="width: 25%;"><a href="dt_set_autotypes.html">dt_set_autotypes</a></td>
+<td>Set column types automatically</td></tr>
+<tr><td style="width: 25%;"><a href="dt_set_cleanfactorlevels.html">dt_set_cleanfactorlevels</a></td>
+<td>Clean factor levels of data.table _*in-place*_</td></tr>
+<tr><td style="width: 25%;"><a href="dt_set_clean_all.html">dt_set_clean_all</a></td>
+<td>Clean column names and factor levels _*in-place*_</td></tr>
+<tr><td style="width: 25%;"><a href="dt_set_logical2factor.html">dt_set_logical2factor</a></td>
+<td>Convert data.table logical columns to factors</td></tr>
+<tr><td style="width: 25%;"><a href="export_plotly.html">export_plotly</a></td>
+<td>Export plotly plot to file</td></tr>
+<tr><td style="width: 25%;"><a href="factor_NA2missing.html">factor_NA2missing</a></td>
+<td>Factor NA to "missing" level</td></tr>
+<tr><td style="width: 25%;"><a href="fct_describe.html">fct_describe</a></td>
+<td>Describe factor</td></tr>
+<tr><td style="width: 25%;"><a href="filter_order.html">filter_order</a></td>
+<td>Filter order</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">fmt</a></td>
+<td>Text formatting</td></tr>
+<tr><td style="width: 25%;"><a href="fmt_gradient.html">fmt_gradient</a></td>
+<td>Gradient text</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getcharacternames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getdatenames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getfactornames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getlogicalnames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getnames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="getnamesandtypes.html">getnamesandtypes</a></td>
+<td>Get data.frame names and types</td></tr>
+<tr><td style="width: 25%;"><a href="getnames.html">getnumericnames</a></td>
+<td>Get names by string matching or class</td></tr>
+<tr><td style="width: 25%;"><a href="get_loaded_pkg_version.html">get_loaded_pkg_version</a></td>
+<td>Get version of all loaded packages (namespaces)</td></tr>
+<tr><td style="width: 25%;"><a href="get_mode.html">get_mode</a></td>
+<td>Get the mode of a factor or integer</td></tr>
+<tr><td style="width: 25%;"><a href="get_output_type.html">get_output_type</a></td>
+<td>Get output type</td></tr>
+<tr><td style="width: 25%;"><a href="get_vars_from_rules.html">get_vars_from_rules</a></td>
+<td>Extract variable names from rules</td></tr>
+<tr><td style="width: 25%;"><a href="graph_node_metrics.html">graph_node_metrics</a></td>
+<td>Node-wise (i.e. vertex-wise) graph metrics</td></tr>
+<tr><td style="width: 25%;"><a href="gray.html">gray</a></td>
+<td>Gray text</td></tr>
+<tr><td style="width: 25%;"><a href="green.html">green</a></td>
+<td>Make text green</td></tr>
+<tr><td style="width: 25%;"><a href="iflengthy.html">iflengthy</a></td>
+<td>Return object if it has length &gt; 0</td></tr>
+<tr><td style="width: 25%;"><a href="index_col_by_attr.html">index_col_by_attr</a></td>
+<td>Index columns by attribute name &amp; value</td></tr>
+<tr><td style="width: 25%;"><a href="init_project_dir.html">init_project_dir</a></td>
+<td>Initialize Project Directory</td></tr>
+<tr><td style="width: 25%;"><a href="inspect_type.html">inspect_type</a></td>
+<td>Inspect character and factor vector</td></tr>
+<tr><td style="width: 25%;"><a href="is_constant.html">is_constant</a></td>
+<td>Check if vector is constant</td></tr>
+<tr><td style="width: 25%;"><a href="is_discrete.html">is_discrete</a></td>
+<td>Check if variable is discrete (factor or integer)</td></tr>
+<tr><td style="width: 25%;"><a href="italic.html">italic</a></td>
+<td>Make text italic</td></tr>
+<tr><td style="width: 25%;"><a href="labelify.html">labelify</a></td>
+<td>Format text for label printing</td></tr>
+<tr><td style="width: 25%;"><a href="list2csv.html">list2csv</a></td>
+<td>Write list elements to CSV files</td></tr>
+<tr><td style="width: 25%;"><a href="lotri2edgeList.html">lotri2edgeList</a></td>
+<td>Connectivity Matrix to Edge List</td></tr>
+<tr><td style="width: 25%;"><a href="make_path.html">make_path</a></td>
+<td>Expand, normalize, concatenate, clean path</td></tr>
+<tr><td style="width: 25%;"><a href="matchcases.html">matchcases</a></td>
+<td>Match cases by covariates</td></tr>
+<tr><td style="width: 25%;"><a href="mgetnames.html">mgetnames</a></td>
+<td>Get names by string matching multiple patterns</td></tr>
+<tr><td style="width: 25%;"><a href="msg.html">msg</a></td>
+<td>Message with provenance</td></tr>
+<tr><td style="width: 25%;"><a href="msg.html">msg0</a></td>
+<td>Message with provenance</td></tr>
+<tr><td style="width: 25%;"><a href="msgdatetime.html">msgdatetime</a></td>
+<td>Message datetime()</td></tr>
+<tr><td style="width: 25%;"><a href="msgdone.html">msgdone</a></td>
+<td>msgdone</td></tr>
+<tr><td style="width: 25%;"><a href="msgstart.html">msgstart</a></td>
+<td>msgstart</td></tr>
+<tr><td style="width: 25%;"><a href="muted.html">muted</a></td>
+<td>Muted text</td></tr>
+<tr><td style="width: 25%;"><a href="names_by_class.html">names_by_class</a></td>
+<td>List column names by class</td></tr>
+<tr><td style="width: 25%;"><a href="orange.html">orange</a></td>
+<td>Make text orange</td></tr>
+<tr><td style="width: 25%;"><a href="pcat.html">pcat</a></td>
+<td>Pad-cat</td></tr>
+<tr><td style="width: 25%;"><a href="previewcolor.html">previewcolor</a></td>
+<td>Preview color</td></tr>
+<tr><td style="width: 25%;"><a href="qstat.html">qstat</a></td>
+<td>SGE qstat</td></tr>
+<tr><td style="width: 25%;"><a href="recycle.html">recycle</a></td>
+<td>Recycle values of vector to match length of target</td></tr>
+<tr><td style="width: 25%;"><a href="rnormmat.html">rnormmat</a></td>
+<td>Random Normal Matrix</td></tr>
+<tr><td style="width: 25%;"><a href="rtemisutils-package.html">rtemisutils</a></td>
+<td>'rtemisutils': Rtemis Utilities</td></tr>
+<tr><td style="width: 25%;"><a href="rtemis_colors.html">rtemis_colors</a></td>
+<td>rtemis Color System</td></tr>
+<tr><td style="width: 25%;"><a href="rtpalette.html">rtpalette</a></td>
+<td>Color Palettes</td></tr>
+<tr><td style="width: 25%;"><a href="rtversion.html">rtversion</a></td>
+<td>Get rtemis version and system info</td></tr>
+<tr><td style="width: 25%;"><a href="rt_letters.html">rt_letters</a></td>
+<td>Construct an n-length vector of letters</td></tr>
+<tr><td style="width: 25%;"><a href="rt_reactable.html">rt_reactable</a></td>
+<td>View table using reactable</td></tr>
+<tr><td style="width: 25%;"><a href="rules2medmod.html">rules2medmod</a></td>
+<td>Convert rules from cutoffs to median/mode and range</td></tr>
+<tr><td style="width: 25%;"><a href="runifmat.html">runifmat</a></td>
+<td>Random Uniform Matrix</td></tr>
+<tr><td style="width: 25%;"><a href="setdiffsym.html">setdiffsym</a></td>
+<td>Symmetric Set Difference</td></tr>
+<tr><td style="width: 25%;"><a href="sge_submit.html">sge_submit</a></td>
+<td>Submit expression to SGE grid</td></tr>
+<tr><td style="width: 25%;"><a href="show_pad.html">show_pad</a></td>
+<td>Add padding</td></tr>
+<tr><td style="width: 25%;"><a href="show_range.html">show_range</a></td>
+<td>Print range of continuous variable</td></tr>
+<tr><td style="width: 25%;"><a href="size.html">size</a></td>
+<td>Size of object</td></tr>
+<tr><td style="width: 25%;"><a href="table_column_attr.html">table_column_attr</a></td>
+<td>Tabulate column attributes</td></tr>
+<tr><td style="width: 25%;"><a href="thin.html">thin</a></td>
+<td>Make text thin/light</td></tr>
+<tr><td style="width: 25%;"><a href="underline.html">underline</a></td>
+<td>Make text underlined</td></tr>
+<tr><td style="width: 25%;"><a href="uniprot_get.html">uniprot_get</a></td>
+<td>Get protein sequence from UniProt</td></tr>
+<tr><td style="width: 25%;"><a href="uniquevalsperfeat.html">uniquevalsperfeat</a></td>
+<td>Unique values per feature</td></tr>
+<tr><td style="width: 25%;"><a href="vec2df.html">vec2df</a></td>
+<td>Vector to data.frame</td></tr>
+<tr><td style="width: 25%;"><a href="xtdescribe.html">xtdescribe</a></td>
+<td>Describe longitudinal dataset</td></tr>
+</table>
+</div></body></html>
