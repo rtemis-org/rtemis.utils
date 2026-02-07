@@ -76,7 +76,7 @@ format_caller <- function(call_stack, call_depth, caller_id, max_char = 30L) {
     if (nchar(caller) > 30) caller <- paste0(substr(caller, 1, 27), "...")
   }
   caller
-} # / rtemis::format_caller
+} # /rtemisutils::format_caller
 
 
 #' Message with provenance

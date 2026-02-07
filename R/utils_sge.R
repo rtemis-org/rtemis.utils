@@ -133,7 +133,7 @@ sge_submit <- function(
 
   ## Diag ----
   cat(
-    "rtemis:::msg('Running on', Sys.getenv('HOSTNAME'), 'as', Sys.getenv('USER'), date = FALSE)",
+    "rtemisutils:::msg('Running on', Sys.getenv('HOSTNAME'), 'as', Sys.getenv('USER'), date = FALSE)",
     "\n",
     file = Rfilepath,
     append = TRUE
