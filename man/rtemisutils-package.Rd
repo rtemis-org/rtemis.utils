@@ -2,7 +2,8 @@
 % Please edit documentation in R/rtemisutils-package.R
 \docType{package}
 \name{rtemisutils-package}
-\alias{rtemisutils}
+\alias{rtemis.utils}
+\alias{rtemis.utils-package}
 \alias{rtemisutils-package}
 \title{\pkg{rtemisutils}: Rtemis Utilities}
 \description{
@@ -12,7 +13,7 @@ Utilities for Rtemis R Packages
 Useful links:
 \itemize{
   \item \url{https://www.rtemis.org}
-  \item Report bugs at \url{https://github.com/rtemis-org/rtemisutils/issues}
+  \item Report bugs at \url{https://github.com/rtemis-org/rtemis.utils/issues}
 }
 
 }
