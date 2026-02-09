@@ -1,5 +1,5 @@
 # info
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016- EDG rtemis.org
 
 #' `rtemis-internals`: `intro`
@@ -45,7 +45,7 @@ intro <- function(
     )
   }
   invisible(start_time)
-} # /rtemisutils::intro
+} # /rtemis.utils::intro
 
 
 # Function to output seconds if seconds < 60, otherwise output minutes
@@ -120,7 +120,7 @@ outro <- function(
     log_to_file("Done.", logfile = logfile)
   }
   invisible(elapsed)
-} # /rtemisutils::outro
+} # /rtemis.utils::outro
 
 
 #' Summarize supervised inputs
@@ -165,7 +165,7 @@ summarize_supervised <- function(
       " features."
     )
   }
-} # /rtemisutils::summarize_supervised
+} # /rtemis.utils::summarize_supervised
 
 
 #' Summarize unsupervised inputs
@@ -183,7 +183,7 @@ summarize_unsupervised <- function(x) {
     highlight(NCOL(x)),
     "features."
   )
-} # /rtemisutils::summarize_unsupervised
+} # /rtemis.utils::summarize_unsupervised
 
 
 #' Log to file
@@ -206,4 +206,4 @@ log_to_file <- function(x, logfile) {
     file = logfile,
     append = TRUE
   )
-} # /rtemisutils::log_to_file
+} # /rtemis.utils::log_to_file

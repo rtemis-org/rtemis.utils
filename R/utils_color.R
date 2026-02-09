@@ -1,5 +1,5 @@
 # utils_color.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016- EDG rtemis.org
 
 #' Simple Color Operations
@@ -70,7 +70,7 @@ color_op <- function(col, fn = c("invert", "mean"), space = c("HSV", "RGB")) {
       return(averaged)
     }
   }
-} # /rtemisutils::color_op
+} # /rtemis.utils::color_op
 
 #' Squared Color Distance
 #'
@@ -93,7 +93,7 @@ color_sqdist <- function(x, y) {
   y.rgb <- col2rgb(y)
 
   sum((x.rgb - y.rgb)^2)
-} # /rtemisutils::color_sqdist
+} # /rtemis.utils::color_sqdist
 
 #' Order colors
 #'
@@ -124,7 +124,7 @@ color_order <- function(
     x <- x[-id]
   }
   c(out, x)
-} # /rtemisutils::color_order
+} # /rtemis.utils::color_order
 
 #' Color to Grayscale
 #'
@@ -156,7 +156,7 @@ col2grayscale <- function(x, what = c("color", "decimal")) {
   } else {
     gs
   }
-} # /rtemisutils::col2grayscale
+} # /rtemis.utils::col2grayscale
 
 #' Invert Color in RGB space
 #'
@@ -194,7 +194,7 @@ color_invertRGB <- function(x) {
     names(invertedl) <- paste0(names(col), ".invert")
   }
   invertedl
-} # /rtemisutils::color_invertRGB
+} # /rtemis.utils::color_invertRGB
 
 #' Fade color towards target
 #'
@@ -256,7 +256,7 @@ desaturate <- function(x, s = .3) {
 
   names(xp) <- .names
   xp
-} # /rtemisutils::desaturate
+} # /rtemis.utils::desaturate
 
 
 #' Convert R color to hexadecimal code
@@ -292,7 +292,7 @@ col2hex <- function(color) {
       )
     )
   })
-} # /rtemisutils::col2hex
+} # /rtemis.utils::col2hex
 
 
 #' Adjust HSV Color
@@ -318,7 +318,7 @@ color_adjust <- function(color, alpha = NULL, hue = 0, sat = 0, val = 0) {
     ac <- adjustcolor(color, alpha.f = alpha)
   }
   ac
-} # /rtemisutils::color_adjust
+} # /rtemis.utils::color_adjust
 
 #' Create an alternating sequence of graded colors
 #'
@@ -359,7 +359,7 @@ color_mix <- function(color, n = 4) {
   color.grad <- lapply(color, function(i) colorRampPalette(i)(n))
 
   c(t(as.data.frame(color.grad)))
-} # /rtemisutils::color_mix
+} # /rtemis.utils::color_mix
 
 
 #' Preview color
@@ -512,7 +512,7 @@ previewcolor <- function(
   if (!is.null(filename)) {
     dev.off()
   }
-} # /rtemisutils::previewcolor
+} # /rtemis.utils::previewcolor
 
 
 rhombus <- function(
@@ -884,7 +884,7 @@ colorgrad <- function(
     return(p)
   }
   invisible(grad)
-} # /rtemisutils::colorgrad
+} # /rtemis.utils::colorgrad
 
 # 3-letter Color Name Abbreviations
 # wht white

@@ -1,5 +1,5 @@
 # html_ops.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2023 EDG rtemis.org
 
 #' @keywords internal
@@ -108,4 +108,4 @@ rtreactable <- function(
     theme = theme,
     ...
   )
-} # /rtemisutils::rtreactable
+} # /rtemis.utils::rtreactable

@@ -1,5 +1,5 @@
 # test_fmt.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2026- EDG rtemis.org
 
 # %% fmt

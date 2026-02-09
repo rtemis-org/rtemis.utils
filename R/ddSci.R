@@ -1,5 +1,5 @@
 # ddSci.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2015- EDG rtemis.org
 
 #' Format Numbers for Printing
@@ -94,4 +94,4 @@ ddSci <- function(x, decimal_places = 2, hi = 1e06, as_numeric = FALSE) {
     xf <- as.numeric(xf)
   }
   xf
-} # /rtemisutils::ddSci
+} # /rtemis.utils::ddSci

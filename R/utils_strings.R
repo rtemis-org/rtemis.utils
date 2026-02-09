@@ -1,5 +1,5 @@
 # strng.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022- EDG rtemis.org
 
 # General hilite function output bold + any color.
@@ -22,7 +22,7 @@ hilite <- function(
   } else {
     paste0(...)
   }
-} # /rtemisutils::hilite
+} # /rtemis.utils::hilite
 
 
 #' @param x Numeric: Input
@@ -227,7 +227,7 @@ labelify <- function(
 
   # Remove [[X]], where X is any length of characters or numbers
   gsub("\\[\\[.*\\]\\]", "", xf)
-} # /rtemisutils::labelify
+} # /rtemis.utils::labelify
 
 
 #' Clean names
@@ -317,7 +317,7 @@ oxfordcomma <- function(..., format_fn = identity) {
   } else {
     format_fn(x)
   }
-} # /rtemisutils::oxfordcomma
+} # /rtemis.utils::oxfordcomma
 
 
 #' Padded cat
@@ -356,7 +356,7 @@ padcat <- function(
   if (newline) {
     cat("\n")
   }
-} # /rtemisutils::padcat
+} # /rtemis.utils::padcat
 
 
 #' Paste with box
@@ -408,7 +408,7 @@ repr_S7name <- function(
     gray(">", output_type = output_type),
     "\n"
   )
-} # /rtemisutils::repr_S7name
+} # /rtemis.utils::repr_S7name
 
 
 #' Cat object
@@ -441,7 +441,7 @@ objcat <- function(
     output_type = output_type
   )
   cat(out)
-} # /rtemisutils::objcat
+} # /rtemis.utils::objcat
 
 
 #' Function to label
@@ -461,4 +461,4 @@ fn2label <- function(fn, varname) {
   fn_body <- deparse(fn)[2]
   # Replace "x" with variable name
   sub("\\(x\\)", paste0("(", varname, ")"), fn_body)
-} # /rtemisutils::fn2label
+} # /rtemis.utils::fn2label

@@ -1,5 +1,5 @@
 # utils_data.table.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022- EDG rtemis.org
 
 #' Number of unique values per feature
@@ -30,7 +30,7 @@ dt_nunique_perfeat <- function(
     printls(nupf, item_format = thin, limit = limit, print_class = FALSE)
   }
   invisible(nupf)
-} # /rtemisutils::dt_nunique_perfeat
+} # /rtemis.utils::dt_nunique_perfeat
 
 
 #' Long to wide key-value reshaping
@@ -103,7 +103,7 @@ dt_keybin_reshape <- function(
     catsize(x, "Output size")
   }
   x
-} # /rtemisutils::dt_keybin_reshape
+} # /rtemis.utils::dt_keybin_reshape
 
 
 #' Merge data.tables
@@ -230,7 +230,7 @@ dt_merge <- function(
     catsize(dat, "Merged")
   }
   dat
-} # /rtemisutils::dt_merge
+} # /rtemis.utils::dt_merge
 
 
 #' Clean factor levels of data.table ***in-place***
@@ -265,7 +265,7 @@ dt_set_cleanfactorlevels <- function(x, prefix_digits = NA) {
       )
     ]
   }
-} # /rtemisutils::dt_set_cleanfactorlevels
+} # /rtemis.utils::dt_set_cleanfactorlevels
 
 
 #' Get N and percent match of values between two columns of two data.tables
@@ -322,7 +322,7 @@ dt_pctmatch <- function(
     )
   }
   invisible(list(nmatch = nmatch, matchpct = matchpct))
-} # /rtemisutils::dt_pctmatch
+} # /rtemis.utils::dt_pctmatch
 
 
 #' Get percent of missing values from every column
@@ -347,7 +347,7 @@ dt_pctmissing <- function(x, verbosity = 1L) {
     printls(pctmissing, print_class = FALSE)
   }
   invisible(list(nmissing = nmissing, pctmissing = pctmissing))
-} # /rtemisutils::dt_pctmissing
+} # /rtemis.utils::dt_pctmissing
 
 
 #' Convert data.table logical columns to factors
@@ -518,7 +518,7 @@ dt_set_autotypes <- function(x, cols = NULL, verbosity = 1L) {
     }
   }
   invisible(x)
-} # /rtemisutils::dt_set_autotypes
+} # /rtemis.utils::dt_set_autotypes
 
 
 #' List column names by attribute
@@ -544,7 +544,7 @@ dt_names_by_attr <- function(x, attribute, exact = TRUE, sorted = TRUE) {
   } else {
     sapply(vals, \(i) names(x)[attrs == i])
   }
-} # /rtemisutils::dt_names_by_attr
+} # /rtemis.utils::dt_names_by_attr
 
 
 #' Clean column names and factor levels ***in-place***
@@ -582,7 +582,7 @@ dt_set_clean_all <- function(x, prefix_digits = NA) {
       )
     ]
   }
-} # /rtemisutils::dt_set_clean_all
+} # /rtemis.utils::dt_set_clean_all
 
 
 #' Describe data.table
@@ -726,4 +726,4 @@ dt_describe <- function(x, verbosity = 1L) {
     printls(out, print_df = TRUE)
   }
   invisible(out)
-} # /rtemisutils::dt_describe
+} # /rtemis.utils::dt_describe

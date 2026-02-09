@@ -1,4 +1,4 @@
-library(rtemisutils)
+library(rtemis.utils)
 library(testthat)
 
-test_check("rtemisutils")
+test_check("rtemis.utils")

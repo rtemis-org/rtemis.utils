@@ -1,5 +1,5 @@
 # sge_submit.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2021- EDG rtemis.org
 
 #' Submit expression to SGE grid
@@ -132,7 +132,7 @@ sge_submit <- function(
 
   ## Diag ----
   cat(
-    "rtemisutils:::msg('Running on', Sys.getenv('HOSTNAME'), 'as', Sys.getenv('USER'), date = FALSE)",
+    "rtemis.utils:::msg('Running on', Sys.getenv('HOSTNAME'), 'as', Sys.getenv('USER'), date = FALSE)",
     "\n",
     file = Rfilepath,
     append = TRUE
@@ -184,7 +184,7 @@ sge_submit <- function(
 
   system(qsub)
   invisible(qsub)
-} # /rtemisutils::sge_submit
+} # /rtemis.utils::sge_submit
 
 
 #' SGE qstat

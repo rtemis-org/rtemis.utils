@@ -1,5 +1,5 @@
 # rtemis color system
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2025 EDG rtemis.org
 
 # Violet: Class names (structure)
@@ -89,4 +89,4 @@ rtemis_colors <- list(
   col_info = col_info,
   col_outer = col_outer,
   col_tuner = col_tuner
-) # /rtemisutils::rtemis_colors
+) # /rtemis.utils::rtemis_colors

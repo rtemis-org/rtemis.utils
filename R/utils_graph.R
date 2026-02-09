@@ -1,5 +1,5 @@
 # igraph_layout
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022 EDG rtemis.org
 
 #' igraph Layout Wrapper
@@ -74,13 +74,13 @@ igraph_layout <- function(net, layout = "mds", dims = 2L) {
     }
     out
   }
-} # /rtemisutils::igraph_layout
+} # /rtemis.utils::igraph_layout
 
 
 # dims: drl, fr, kk, mds
 
 # graph_node_metrics.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2021 EDG rtemis.org
 
 #' Node-wise (i.e. vertex-wise) graph metrics
@@ -141,11 +141,11 @@ graph_node_metrics <- function(x, verbosity = 1L) {
     Page_Rank = .page_rank,
     Authority_Score = .authority_score
   )
-} # /rtemisutils::graph_node_metrics
+} # /rtemis.utils::graph_node_metrics
 
 
 # lotri2edgeList.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016 EDG rtemis.org
 
 #' Connectivity Matrix to Edge List
@@ -209,4 +209,4 @@ lotri2edgeList <- function(A, filename = NULL, verbosity = 1L) {
     msg0("Saved ", highlight(filename), ".")
   }
   invisible(out)
-} # /rtemisutils::lotri2edgelist
+} # /rtemis.utils::lotri2edgelist

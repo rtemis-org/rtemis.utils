@@ -1,5 +1,5 @@
 # utils_plotly
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2021- EDG rtemis.org
 
 # plotly_vline calls plotly_vline1 to create a list for one or more vertical
@@ -185,4 +185,4 @@ export_plotly <- function(
       msgdone()
     }
   }
-} # /rtemisutils::export_plotly
+} # /rtemis.utils::export_plotly

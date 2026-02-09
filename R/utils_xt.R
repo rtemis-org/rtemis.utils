@@ -1,5 +1,5 @@
 # xtdescribe.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2024 EDG
 
 #' Describe longitudinal dataset
@@ -188,7 +188,7 @@ xtdescribe <- function(
 
   print(pattern_summary, row.names = FALSE)
   invisible(pattern_summary)
-} # /rtemisutils::xtdescribe
+} # /rtemis.utils::xtdescribe
 
 
 #' @keywords internal

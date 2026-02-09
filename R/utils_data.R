@@ -1,5 +1,5 @@
 # utils_data.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # EDG rtemis.org
 
 #' Describe factor
@@ -64,7 +64,7 @@ fct_describe <- function(x, max_n = 5, return_ordered = TRUE) {
       )
     }
   }
-} # /rtemisutils::fct_describe
+} # /rtemis.utils::fct_describe
 
 
 #' @rdname error
@@ -73,7 +73,7 @@ fct_describe <- function(x, max_n = 5, return_ordered = TRUE) {
 mse <- function(x, y, na.rm = TRUE) {
   error <- x - y
   mean(error^2, na.rm = na.rm)
-} # /rtemisutils::mse
+} # /rtemis.utils::mse
 
 
 #' Match cases by covariates
@@ -230,7 +230,7 @@ matchcases <- function(
   }
 
   mc
-} # /rtemisutils::matchcases
+} # /rtemis.utils::matchcases
 
 
 #' Index columns by attribute name & value
@@ -261,7 +261,7 @@ matchcases <- function(
 index_col_by_attr <- function(x, name, value) {
   colattr <- unlist(sapply(x, \(i) attr(i, name)))
   which(colattr == value)
-} # /rtemisutils::index_col_by_attr
+} # /rtemis.utils::index_col_by_attr
 
 
 #' Tabulate column attributes
@@ -298,7 +298,7 @@ table_column_attr <- function(x, attr = "source", useNA = "always") {
     }
   })
   table(attrs, useNA = useNA)
-} # /rtemisutils::table_column_attr
+} # /rtemis.utils::table_column_attr
 
 
 #' List column names by class
@@ -330,7 +330,7 @@ names_by_class <- function(
   }
   cat(repr_ls(out, item_format = item_format, maxlength = maxlength))
   invisible()
-} # /rtemisutils::names_by_class
+} # /rtemis.utils::names_by_class
 
 
 #' Inspect character and factor vector
@@ -405,4 +405,4 @@ inspect_type <- function(
   } else {
     xclass
   }
-} # /rtemisutils::inspect_type
+} # /rtemis.utils::inspect_type

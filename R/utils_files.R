@@ -1,5 +1,5 @@
 # utils_files.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2025 EDG rtemis.org
 
 #' Expand, normalize, concatenate, clean path
@@ -22,4 +22,4 @@ make_path <- function(..., expand_path = TRUE) {
     path <- path.expand(path)
   }
   path
-} # /rtemisutils::make_path
+} # /rtemis.utils::make_path

@@ -1,5 +1,5 @@
 # utils_art.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2025- EDG rtemis.org
 
 #' Color columns of text art
@@ -70,7 +70,7 @@ color_txt_columns <- function(
   }
 
   result
-} # /rtemisutils::color_txt_columns
+} # /rtemis.utils::color_txt_columns
 
 
 #' Color rows of text art
@@ -141,7 +141,7 @@ color_txt_rows <- function(
   }
 
   result
-} # /rtemisutils::color_txt_rows
+} # /rtemis.utils::color_txt_rows
 
 
 #' pkglogo
@@ -180,7 +180,7 @@ pkglogo <- function(
     do.call(fmt_fn, c(list(x = logo_txt), args)),
     collapse = "\n"
   )
-} # /rtemisutils::pkglogo
+} # /rtemis.utils::pkglogo
 
 
 # Read UTF-8 strings from file, because R files should be ASCII-only.
@@ -256,7 +256,7 @@ rtlogo2 <- paste0(
     output_type = "ansi"
   ),
   collapse = "\n"
-) # /rtemisutils::rtlogo2
+) # /rtemis.utils::rtlogo2
 
 #' rtlogo3
 #'
@@ -278,7 +278,7 @@ rtlogo3 <- paste0(
     output_type = "ansi"
   ),
   collapse = "\n"
-) # /rtemisutils::rtlogo3
+) # /rtemis.utils::rtlogo3
 
 
 fmtlogo <- paste0(
@@ -502,4 +502,4 @@ show_col <- function(
   }
 
   result
-} # /rtemisutils::show_col
+} # /rtemis.utils::show_col

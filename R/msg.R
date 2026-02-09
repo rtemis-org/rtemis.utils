@@ -1,5 +1,5 @@
 # msg.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016- EDG rtemis.org
 
 # used by msgdatetime, log_to_file
@@ -76,7 +76,7 @@ format_caller <- function(call_stack, call_depth, caller_id, max_char = 30L) {
     if (nchar(caller) > 30) caller <- paste0(substr(caller, 1, 27), "...")
   }
   caller
-} # /rtemisutils::format_caller
+} # /rtemis.utils::format_caller
 
 
 #' Message with provenance
@@ -140,7 +140,7 @@ msg <- function(
   } else if (newline) {
     message("")
   }
-} # /rtemisutils::msg
+} # /rtemis.utils::msg
 
 
 #' @rdname msg
@@ -180,7 +180,7 @@ msg0 <- function(
   } else if (newline) {
     message("")
   }
-} # /rtemisutils::msg0
+} # /rtemis.utils::msg0
 
 
 #' Pad-cat
@@ -236,7 +236,7 @@ msgstart <- function(
   }
   msgdatetime()
   message(plain(paste(txt, collapse = sep)), appendLF = FALSE)
-} # /rtemisutils::msgstart
+} # /rtemis.utils::msgstart
 
 
 #' msgdone
@@ -253,4 +253,4 @@ msgdone <- function(caller = NULL, call_depth = 1, caller_id = 1, sep = " ") {
   message(" ", appendLF = FALSE)
   yay(end = "")
   message(gray(paste0("[", caller, "]\n")), appendLF = FALSE)
-} # /rtemisutils::msgdone
+} # /rtemis.utils::msgdone

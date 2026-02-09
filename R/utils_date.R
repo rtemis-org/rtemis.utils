@@ -1,5 +1,5 @@
 # utils_date.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2024- EDG rtemis.org
 
 #' Extract features from dates
@@ -37,7 +37,7 @@ dates2features <- function(
     dt[, dates := NULL]
   }
   dt
-} # /rtemisutils::dates2features
+} # /rtemis.utils::dates2features
 
 
 #' Get holidays from date vector
@@ -79,7 +79,7 @@ get_holidays <- function(
   )
   holidays_fct[dates %in% .holidays] <- "Holiday"
   holidays_fct
-} # /rtemisutils::get_holidays
+} # /rtemis.utils::get_holidays
 
 #' Date to factor time bin
 #'
@@ -182,7 +182,7 @@ date2factor <- function(
       )
     }
   }
-} # /rtemisutils::date2factor
+} # /rtemis.utils::date2factor
 
 
 #' Date to year-quarter factor
@@ -198,7 +198,7 @@ date2yq <- function(x, ordered = FALSE) {
     paste0(data.table::year(x), " Q", data.table::quarter(x)),
     ordered = ordered
   )
-} # /rtemisutils::date2yq
+} # /rtemis.utils::date2yq
 
 
 #' Date to year-month factor
@@ -213,4 +213,4 @@ date2ym <- function(x, ordered = FALSE) {
   ym <- paste(substr(months(x), 1, 3), data.table::year(x))
   .levels <- unique(ym[order(x)])
   factor(ym, levels = .levels, ordered = ordered)
-} # /rtemisutils::date2ym
+} # /rtemis.utils::date2ym

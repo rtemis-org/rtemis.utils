@@ -1,5 +1,5 @@
 # dataops
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2021 EDG rtemis.org
 
 #' Get names by string matching or class
@@ -51,7 +51,7 @@ getnames <- function(
     ]
   }
   .names
-} # /rtemisutils::getnames
+} # /rtemis.utils::getnames
 
 
 #' Get names by string matching multiple patterns
@@ -151,7 +151,7 @@ getnamesandtypes <- function(x) {
   xnames <- names(x)
   attr(xnames, "type") <- sapply(x, class)
   xnames
-} # /rtemisutils::namesandtypes
+} # /rtemis.utils::namesandtypes
 
 
 #' Unique values per feature
@@ -176,7 +176,7 @@ uniquevalsperfeat <- function(x, excludeNA = FALSE) {
   } else {
     apply(x, 2, function(i) length(unique(i)))
   }
-} # /rtemisutils::uniquevalsperfeat
+} # /rtemis.utils::uniquevalsperfeat
 
 
 #' Move data frame column
@@ -219,7 +219,7 @@ df_movecolumn <- function(x, colname, to = ncol(x)) {
 
   xnames <- setdiff(names(x), colname)
   x[, append(xnames, colname, after = to - 1L)]
-} # /rtemisutils::df_movecolumn
+} # /rtemis.utils::df_movecolumn
 
 
 #' Vector to data.frame
@@ -241,4 +241,4 @@ vec2df <- function(x, col_names = NULL) {
     names(x) <- col_names
   }
   as.data.frame(t(x))
-} # /rtemisutils::vec2df
+} # /rtemis.utils::vec2df

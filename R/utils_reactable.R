@@ -1,5 +1,5 @@
 # rt_reactable.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022 EDG rtemis.org
 
 #' View table using reactable
@@ -106,4 +106,4 @@ rt_reactable <- function(
     theme = theme,
     ...
   )
-} # /rtemisutils::rt_reactable
+} # /rtemis.utils::rt_reactable

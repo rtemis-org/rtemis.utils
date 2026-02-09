@@ -1,5 +1,5 @@
 # fmt.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2025 EDG rtemis.org
 
 #' Get output type
@@ -36,7 +36,7 @@ get_output_type <- function(
   }
 
   match.arg(output_type)
-} # /rtemisutils::get_output_type
+} # /rtemis.utils::get_output_type
 
 
 #' Text formatting
@@ -199,7 +199,7 @@ fmt <- function(
     out <- paste0(strrep(" ", pad), out)
   }
   out
-} # /rtemisutils::fmt
+} # /rtemis.utils::fmt
 
 
 #' Highlight text
@@ -221,14 +221,14 @@ highlight <- function(
   output_type = c("ansi", "html", "plain")
 ) {
   fmt(x, col = highlight_col, bold = TRUE, pad = pad, output_type = output_type)
-} # /rtemisutils::highlight
+} # /rtemis.utils::highlight
 
 highlight2 <- function(
   x,
   output_type = c("ansi", "html", "plain")
 ) {
   fmt(x, col = highlight2_col, bold = FALSE, output_type = output_type)
-} # /rtemisutils::highlight2
+} # /rtemis.utils::highlight2
 
 
 #' Make text bold
@@ -244,7 +244,7 @@ highlight2 <- function(
 #' @export
 bold <- function(text, output_type = c("ansi", "html", "plain")) {
   fmt(text, bold = TRUE, output_type = output_type)
-} # /rtemisutils::bold
+} # /rtemis.utils::bold
 
 
 #' Make text italic
@@ -260,7 +260,7 @@ bold <- function(text, output_type = c("ansi", "html", "plain")) {
 #' @export
 italic <- function(text, output_type = c("ansi", "html", "plain")) {
   fmt(text, italic = TRUE, output_type = output_type)
-} # /rtemisutils::italic
+} # /rtemis.utils::italic
 
 
 #' Make text underlined
@@ -276,7 +276,7 @@ italic <- function(text, output_type = c("ansi", "html", "plain")) {
 #' @export
 underline <- function(text, output_type = c("ansi", "html", "plain")) {
   fmt(text, underline = TRUE, output_type = output_type)
-} # /rtemisutils::underline
+} # /rtemis.utils::underline
 
 
 #' Make text thin/light
@@ -292,7 +292,7 @@ underline <- function(text, output_type = c("ansi", "html", "plain")) {
 #' @export
 thin <- function(text, output_type = c("ansi", "html", "plain")) {
   fmt(text, thin = TRUE, output_type = output_type)
-} # /rtemisutils::thin
+} # /rtemis.utils::thin
 
 
 #' Muted text
@@ -308,7 +308,7 @@ thin <- function(text, output_type = c("ansi", "html", "plain")) {
 #' @export
 muted <- function(x, output_type = c("ansi", "html", "plain")) {
   fmt(x, muted = TRUE, output_type = output_type)
-} # /rtemisutils::muted
+} # /rtemis.utils::muted
 
 
 #' Gray text
@@ -327,7 +327,7 @@ muted <- function(x, output_type = c("ansi", "html", "plain")) {
 #' @export
 gray <- function(x, output_type = c("ansi", "html", "plain")) {
   fmt(x, col = "#808080", output_type = output_type)
-} # /rtemisutils::gray
+} # /rtemis.utils::gray
 
 
 #' Apply 256-color formatting
@@ -381,7 +381,7 @@ col256 <- function(
     },
     "plain" = text
   )
-} # /rtemisutils::col256
+} # /rtemis.utils::col256
 
 
 #' Convert ANSI 256 color code to HEX
@@ -441,7 +441,7 @@ ansi256_to_hex <- function(code) {
     gray_level,
     maxColorValue = 255
   )
-} # /rtemisutils::ansi256_to_hex
+} # /rtemis.utils::ansi256_to_hex
 
 
 #' Gradient text
@@ -502,7 +502,7 @@ fmt_gradient <- function(
 
   # Combine all colored characters
   paste(gradient_chars, collapse = "")
-} # /rtemisutils::fmt_gradient
+} # /rtemis.utils::fmt_gradient
 
 
 #' Add padding
@@ -531,4 +531,4 @@ show_pad <- function(pad = 2L, output_type = NULL) {
     },
     "plain" = pad_str
   )
-} # /rtemisutils::show_pad
+} # /rtemis.utils::show_pad

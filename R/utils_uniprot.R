@@ -1,5 +1,5 @@
 # uniprot_get.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022 E.D. Gennatas lambdamd.org
 
 #' Get protein sequence from UniProt
@@ -38,4 +38,4 @@ uniprot_get <- function(
     Annotation = Annotation,
     Sequence = as.character(dat[[1]])
   )
-} # /rtemisutils::uniprot_get
+} # /rtemis.utils::uniprot_get

@@ -1,5 +1,5 @@
 # utils_checks.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2024- EDG rtemis.org
 
 # clean_* functions performm checks and return clean inputs.
@@ -29,7 +29,7 @@ is_check <- function(x, fn) {
     return(FALSE)
   }
   TRUE
-} # /rtemisutils::is_check
+} # /rtemis.utils::is_check
 
 
 #' Test type of object
@@ -49,7 +49,7 @@ is_test <- function(x, fn) {
     cli::cli_abort(bold(input), " is not ", bold(type))
   }
   invisible()
-} # /rtemisutils::is_test
+} # /rtemis.utils::is_test
 
 
 #' Check class of object
@@ -74,7 +74,7 @@ test_inherits <- function(x, cl) {
     return(FALSE)
   }
   TRUE
-} # /rtemisutils::test_inherits
+} # /rtemis.utils::test_inherits
 
 
 #' Test class of object
@@ -113,7 +113,7 @@ check_inherits <- function(
   }
 
   invisible()
-} # /rtemisutils::check_inherits
+} # /rtemis.utils::check_inherits
 
 
 #' Function that returns object if it is of a certain class
@@ -147,7 +147,7 @@ strict <- function(
   } else {
     cli::cli_abort(xname, " must be ", bold(class))
   }
-} # /rtemisutils::strict
+} # /rtemis.utils::strict
 
 #' Clean integer input
 #'
@@ -186,7 +186,7 @@ clean_int <- function(x, xname = deparse(substitute(x))) {
     return(NULL)
   }
   cli::cli_abort("{.var {xname}} must be integer.")
-} # /rtemisutils::clean_int
+} # /rtemis.utils::clean_int
 
 
 #' Match Arguments Ignoring Case
@@ -207,7 +207,7 @@ clean_int <- function(x, xname = deparse(substitute(x))) {
 match_arg <- function(x, choices) {
   out <- match.arg(tolower(x), tolower(choices))
   grep(out, choices, value = TRUE, ignore.case = TRUE)
-} # /rtemisutils::match_arg
+} # /rtemis.utils::match_arg
 
 
 #' Check logical
@@ -241,7 +241,7 @@ check_logical <- function(
   }
 
   invisible()
-} # /rtemisutils::check_logical
+} # /rtemis.utils::check_logical
 
 
 #' Check character
@@ -275,7 +275,7 @@ check_character <- function(
   }
 
   invisible()
-} # /rtemisutils::check_character
+} # /rtemis.utils::check_character
 
 
 #' Check positive float
@@ -319,7 +319,7 @@ check_floatpos <- function(
   }
 
   invisible()
-} # /rtemisutils::check_floatpos
+} # /rtemis.utils::check_floatpos
 
 
 #' Check float between 0 and 1, exclusive
@@ -362,7 +362,7 @@ check_float01exc <- function(
   }
 
   invisible()
-} # /rtemisutils::check_float01
+} # /rtemis.utils::check_float01
 
 
 #' Check float between 0 and 1, inclusive
@@ -403,7 +403,7 @@ check_float01inc <- function(
   }
 
   invisible()
-} # /rtemisutils::check_float01
+} # /rtemis.utils::check_float01
 
 check_floatpos1 <- function(
   x,
@@ -433,7 +433,7 @@ check_floatpos1 <- function(
   }
 
   invisible()
-} # /rtemisutils::check_floatpos1
+} # /rtemis.utils::check_floatpos1
 
 
 #' Check positive integer
@@ -464,7 +464,7 @@ clean_posint <- function(x, allow_na = FALSE, xname = deparse(substitute(x))) {
   }
 
   clean_int(x, xname = xname)
-} # /rtemisutils::clean_posint
+} # /rtemis.utils::clean_posint
 
 
 #' Check float greater than or equal to 0
@@ -507,7 +507,7 @@ check_float0pos <- function(
   }
 
   invisible()
-} # /rtemisutils::check_float0pos
+} # /rtemis.utils::check_float0pos
 
 
 #' Check float -1 <= x <= 1
@@ -547,7 +547,7 @@ check_float_neg1_1 <- function(
   }
 
   invisible()
-} # /rtemisutils::check_float_neg1_1
+} # /rtemis.utils::check_float_neg1_1
 
 
 #' Abbreviate object class name
@@ -562,7 +562,7 @@ check_float_neg1_1 <- function(
 #' @noRd
 abbreviate_class <- function(x, n = 4L) {
   paste0("<", abbreviate(class(x)[1], minlength = n), ">")
-} # /rtemisutils::abbr_class
+} # /rtemis.utils::abbr_class
 
 
 #' \pkg{rtemis} internal: Dependencies check
@@ -599,7 +599,7 @@ check_dependencies <- function(..., verbosity = 0L) {
     if (verbosity > 0L) msg("Dependency check passed")
   }
   invisible()
-} # /rtemisutils::check_dependencies
+} # /rtemis.utils::check_dependencies
 
 
 #' Check data.table
@@ -617,4 +617,4 @@ check_data.table <- function(x, xname = deparse(substitute(x))) {
     cli::cli_abort("{.var {xname}} must be a data.table.")
   }
   invisible(x)
-} # /rtemisutils::check_data.table
+} # /rtemis.utils::check_data.table

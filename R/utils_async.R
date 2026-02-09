@@ -1,5 +1,5 @@
 # utils_async.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2026 EDG rtemis.org
 
 # Define allowed future plans
@@ -40,7 +40,7 @@ identify_plan <- function(x = NULL) {
   cli::cli_abort(
     "Detected future plan not in allowed plans ({.val {ALLOWED_PLANS}}). Detected plan class: {.val {class(x)}}"
   )
-} # /rtemisutils::identify_plan
+} # /rtemis.utils::identify_plan
 
 
 #' Set preferred plan

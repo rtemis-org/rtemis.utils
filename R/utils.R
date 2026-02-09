@@ -1,5 +1,5 @@
 # utils.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016- EDG rtemis.org
 
 #' Print range of continuous variable
@@ -22,7 +22,7 @@ show_range <- function(x, ddSci = TRUE, decimal_places = 1, na.rm = TRUE) {
   } else {
     paste(range(x, na.rm = na.rm), collapse = " to ")
   }
-} # /rtemisutils::show_range
+} # /rtemis.utils::show_range
 
 
 #' Set Dynamic Range
@@ -61,7 +61,7 @@ drange <- function(x, lo = 0, hi = 1, byCol = TRUE) {
   } else {
     dr(x, lo, hi)
   }
-} # /rtemisutils::drange
+} # /rtemis.utils::drange
 
 
 #' Factor NA to "missing" level
@@ -90,7 +90,7 @@ factor_NA2missing <- function(x, na_level_name = "missing") {
   } else {
     x
   }
-} # /rtemisutils::factor_NA2missing
+} # /rtemis.utils::factor_NA2missing
 
 
 #' Filter order
@@ -132,7 +132,7 @@ get_loaded_pkg_version <- function() {
     Version = sapply(loaded_, function(i) as.character(packageVersion(i))),
     row.names = seq(loaded_)
   )
-} # /rtemisutils::get_loaded_pkg_version
+} # /rtemis.utils::get_loaded_pkg_version
 
 
 #' Get the mode of a factor or integer
@@ -190,7 +190,7 @@ get_mode <- function(
     }
   }
   out
-} # /rtemisutils::get_mode
+} # /rtemis.utils::get_mode
 
 
 #' Check if vector is constant
@@ -217,7 +217,7 @@ is_constant <- function(x, skip_missing = FALSE) {
     x <- na.exclude(x)
   }
   isTRUE(all(x == x[1]))
-} # /rtemisutils::is_constant
+} # /rtemis.utils::is_constant
 
 
 #' Check if variable is discrete (factor or integer)
@@ -230,7 +230,7 @@ is_constant <- function(x, skip_missing = FALSE) {
 #' @export
 is_discrete <- function(x) {
   is.factor(x) || is.integer(x) || is.logical(x) || is.character(x)
-} # /rtemisutils::is_discrete
+} # /rtemis.utils::is_discrete
 
 
 #' Return object if it has length > 0
@@ -251,7 +251,7 @@ is_discrete <- function(x) {
 #' iflengthy(y)
 iflengthy <- function(x) {
   if (length(x) > 0) x else NULL
-} # /rtemisutils::iflengthy
+} # /rtemis.utils::iflengthy
 
 
 #' @keywords internal
@@ -322,7 +322,7 @@ size <- function(x, verbosity = 1L) {
     cat(paste(bold(z_formatted), collapse = gray(" x ")), "\n")
   }
   invisible(z)
-} # /rtemisutils::size
+} # /rtemis.utils::size
 
 
 #' Recycle values of vector to match length of target
@@ -346,7 +346,7 @@ recycle <- function(x, target) {
   } else {
     rep(x, ceiling(lent / lenx))[seq(lent)]
   }
-} # /rtemisutils::recycle
+} # /rtemis.utils::recycle
 
 
 #' Random Normal Matrix
@@ -391,7 +391,7 @@ rnormmat <- function(
     mat <- as.data.frame(mat)
   }
   mat
-} # /rtemisutils::rnormmat
+} # /rtemis.utils::rnormmat
 
 
 #' Random Uniform Matrix
@@ -436,7 +436,7 @@ runifmat <- function(
     mat <- as.data.frame(mat)
   }
   mat
-} # /rtemisutils::runifmat
+} # /rtemis.utils::runifmat
 
 
 #' Symmetric Set Difference
@@ -456,7 +456,7 @@ runifmat <- function(
 #' setdiffsym(1:5, 1:10)
 setdiffsym <- function(x, y) {
   union(setdiff(x, y), setdiff(y, x))
-} # /rtemisutils::setdiffsym
+} # /rtemis.utils::setdiffsym
 
 
 #' Construct an n-length vector of letters
@@ -476,7 +476,7 @@ rt_letters <- function(n = 100, caps = FALSE) {
     out <- c(out, prtlet(out[(out_length - 25):out_length]))
   }
   out[1:n]
-} # /rtemisutils::rt_letters
+} # /rtemis.utils::rt_letters
 
 
 #' Initialize Project Directory
@@ -529,4 +529,4 @@ init_project_dir <- function(verbosity = 1L) {
     cat(highlight("  All done\n"))
   }
   invisible(wd)
-} # /rtemisutils::init_project_dir
+} # /rtemis.utils::init_project_dir

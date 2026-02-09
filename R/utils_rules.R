@@ -1,5 +1,5 @@
 # utils_rules.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # EDG rtemis.org
 
 #' Match Rules to Cases
@@ -48,7 +48,7 @@ match_cases_by_rules <- function(x, rules, prefix = "Rule_", verbosity = 1L) {
     msgdone()
   }
   cxr
-} # /rtemisutils::match_cases_by_rules
+} # /rtemis.utils::match_cases_by_rules
 
 
 #' Index cases by rules
@@ -87,7 +87,7 @@ simple_prune_ <- function(rule, max_length, sep = " & ") {
   } else {
     rule
   }
-} # /rtemisutils::simple_prune_
+} # /rtemis.utils::simple_prune_
 
 
 #' Prune rules to a maximum length
@@ -111,7 +111,7 @@ simple_prune <- function(rules, max_length, sep = " & ") {
     USE.NAMES = FALSE
   )
   rules
-} # /rtemisutils::simple_prune
+} # /rtemis.utils::simple_prune
 
 
 #' Extract variable names from rules
@@ -169,7 +169,7 @@ format_rules <- function(x, space_after_comma = FALSE, decimal_places = NULL) {
     )
   }
   x
-} # /rtemisutils::format_rules
+} # /rtemis.utils::format_rules
 
 
 #' Format LightRuleFit rules
@@ -211,11 +211,11 @@ format_LightRuleFit_rules <- function(
     )
   }
   gsub("  ", " ", x)
-} # /rtemisutils::format_LightRuleFit_rules
+} # /rtemis.utils::format_LightRuleFit_rules
 
 
 # rules2medmod
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2018 EDG rtemis.org
 
 #' Convert rules from cutoffs to median/mode and range
@@ -284,4 +284,4 @@ rules2medmod <- function(rules, x, .ddSci = TRUE, verbosity = 1L) {
     msg("Done")
   }
   rules_f
-} # /rtemisutils::rules2medmod
+} # /rtemis.utils::rules2medmod

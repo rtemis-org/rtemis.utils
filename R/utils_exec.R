@@ -1,5 +1,5 @@
 # utils_exec.Ranger
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2025 EDG rtemis.org
 
 #' Do call with tryCatch and suggestion
@@ -86,4 +86,4 @@ do_call <- function(
       cli::cli_abort(errmsg, call = call)
     } # /error
   ) # /tryCatch
-} # /rtemisutils::do_call
+} # /rtemis.utils::do_call

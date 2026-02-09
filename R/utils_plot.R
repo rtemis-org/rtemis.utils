@@ -1,5 +1,5 @@
 # plotops.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2020 EDG rtemis.org
 
 #' Get estimated text width
@@ -24,7 +24,7 @@ ylo <- function(pct_lower = .08) {
   ylo <- par("usr")[3]
   yhi <- par("usr")[4]
   ylo - pct_lower * (yhi - ylo)
-} # /rtemisutils::ylo
+} # /rtemis.utils::ylo
 
 
 #' Get y above current plot area
@@ -39,7 +39,7 @@ yhi <- function(pct_higher = .08) {
   ylo <- par("usr")[3]
   yhi <- par("usr")[4]
   yhi + pct_higher * (yhi - ylo)
-} # /rtemisutils::yhi
+} # /rtemis.utils::yhi
 
 
 #' @keywords internal
@@ -85,4 +85,4 @@ getlim <- function(x, axs = c("r", "i"), axs.r.pct = .04) {
   } else {
     c(.min, .max)
   }
-} # /rtemisutils::getlim
+} # /rtemis.utils::getlim

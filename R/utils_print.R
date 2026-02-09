@@ -1,5 +1,5 @@
 # print_ops.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016-23 EDG rtemis.org
 
 is_common_struct <- function(x) {
@@ -275,10 +275,10 @@ printls <- function(
       }
     }
   }
-} # /rtemisutils::printls
+} # /rtemis.utils::printls
 
 # printdf1
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016 rtemis.org
 #' Print 1 x N data frame
 #'
@@ -306,7 +306,7 @@ printdf1 <- function(x, pad = 2) {
       "\n"
     )
   }
-} # /rtemisutils::printdf1
+} # /rtemis.utils::printdf1
 
 
 #' Print data frame
@@ -412,7 +412,7 @@ printdf <- function(
     }
   }
   if (newline) cat("\n")
-} # /rtemisutils::printdf
+} # /rtemis.utils::printdf
 
 #' Show data.frame
 #'
@@ -534,7 +534,7 @@ show_df <- function(
     }
   }
   out
-} # /rtemisutils::show_df
+} # /rtemis.utils::show_df
 
 
 #' Show table
@@ -619,13 +619,13 @@ show_table <- function(
     )
   )
   out
-} # /rtemisutils::show_table
+} # /rtemis.utils::show_table
 
 #' @keywords internal
 #' @noRd
 pastels <- function(x, bullet = "  -") {
   paste(paste(bullet, x, collapse = "\n"), "\n")
-} # /rtemisutils::pastels
+} # /rtemis.utils::pastels
 
 
 #' Get first few elements of a vector with ellipsis
@@ -646,10 +646,10 @@ headdot <- function(x, maxlength = 6L, format_fn = identity) {
       "..."
     )
   }
-} # /rtemisutils::headdot
+} # /rtemis.utils::headdot
 
 # twocol2html.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2020 EDG rtemis.org
 
 #' Create html table from a data.frame with 2 columns: Var name, and Coefs
@@ -739,7 +739,7 @@ twocol2html <- function(
 
   # Combine
   paste(tablestyle, header, tab, "</table>", collapse = "")
-} # /rtemisutils::twocol2html
+} # /rtemis.utils::twocol2html
 
 
 #' Print Size
@@ -790,7 +790,7 @@ catsize <- function(x, name = NULL, verbosity = 1L, newline = TRUE) {
     }
     invisible(.nels)
   }
-} # /rtemisutils::catsize
+} # /rtemis.utils::catsize
 
 
 #' Print single line of object info
@@ -804,14 +804,14 @@ catsize <- function(x, name = NULL, verbosity = 1L, newline = TRUE) {
 
 print1 <- function(x, ...) {
   UseMethod("print1")
-} # /rtemisutils::print1
+} # /rtemis.utils::print1
 
 #' @author EDG
 #' @keywords internal
 #' @noRd
 print1.default <- function(x, ...) {
   head(x, 1)
-} # /rtemisutils::print1.default
+} # /rtemis.utils::print1.default
 
 
 #' @author EDG
@@ -823,7 +823,7 @@ list2text <- function(x, sep = ": ", line = "\n") {
     paste0(.names[i], sep, x[[i]], line)
   }) |>
     paste0(collapse = "")
-} # /rtemisutils::list2text
+} # /rtemis.utils::list2text
 
 
 #' List to HTML
@@ -853,7 +853,7 @@ list2html <- function(
   }) |>
     paste0(collapse = "") |>
     htmltools::HTML()
-} # /rtemisutils::list2html
+} # /rtemis.utils::list2html
 
 
 #' Helper function to build padded string equivalent of padcat
@@ -1263,4 +1263,4 @@ repr_ls <- function(
   }
 
   result
-} # /rtemisutils::repr_ls
+} # /rtemis.utils::repr_ls

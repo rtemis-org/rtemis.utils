@@ -1,5 +1,5 @@
 # rt_io.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2022 EDG rtemis.org
 
 #' Write \pkg{rtemis} model to RDS file
@@ -65,7 +65,7 @@ rt_save <- function(
     }
     cli::cli_abort("Error: Saving model to ", outdir, " failed.")
   }
-} # /rtemisutils::rt_save
+} # /rtemis.utils::rt_save
 
 #' Check file(s) exist
 #'
@@ -94,7 +94,7 @@ check_files <- function(paths, verbosity = 1L, pad = 0) {
       cli::cli_abort("File not found")
     }
   }
-} # /rtemisutils::check_files
+} # /rtemis.utils::check_files
 
 
 #' Write list elements to CSV files
@@ -131,4 +131,4 @@ list2csv <- function(x, outdir) {
   for (i in seq_along(x)) {
     write.csv(x[[i]], file.path(outdir, outnames[i]), row.names = FALSE)
   }
-} # /rtemisutils::list2csv
+} # /rtemis.utils::list2csv

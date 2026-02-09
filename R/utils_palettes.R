@@ -1,5 +1,5 @@
 # palettes.R
-# ::rtemisutils::
+# ::rtemis.utils::
 # 2016- EDG rtemis.org
 
 # Colors ----
@@ -1761,7 +1761,7 @@ rtpalette <- function(palette = NULL, verbosity = 1L) {
     )
     rtemis_palettes[[palette]]
   }
-} # /rtemisutils::rtpalette
+} # /rtemis.utils::rtpalette
 
 
 #' Access rtemis palette colors
@@ -1784,7 +1784,7 @@ rtemis_palette <- function(n, palette = rtemis_palette) {
   .palette <- unlist(rtpalette(palette))
   names(.palette) <- NULL
   .palette[seq_len(n)]
-} # /rtemisutils::rtemis_palette
+} # /rtemis.utils::rtemis_palette
 
 penn_heat <- function(
   n = 11,
@@ -1902,7 +1902,7 @@ penn_heat <- function(
   }
 
   return(grad)
-} # /rtemisutils::penn_heat
+} # /rtemis.utils::penn_heat
 
 
 # Xterm Colors ----
