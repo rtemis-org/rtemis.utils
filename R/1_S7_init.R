@@ -4,6 +4,9 @@
 
 #' String representation
 #'
+#' @param x Object to represent as a string.
+#' @param ... Additional arguments passed to methods.
+#'
 #' @return Character string representation of the object.
 #'
 #' @author EDG

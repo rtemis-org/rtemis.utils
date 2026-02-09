@@ -6,6 +6,11 @@
 \usage{
 repr(x, ...)
 }
+\arguments{
+\item{x}{Object to represent as a string.}
+
+\item{...}{Additional arguments passed to methods.}
+}
 \value{
 Character string representation of the object.
 }
