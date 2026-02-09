@@ -27,7 +27,6 @@
 #' @param mem_free Character: Amount of memory to request from the scheduler
 #' @param temp_dir Character: Temporary directory that is accessible to all
 #' execution nodes.
-#' Default = `file.path(getwd(), ".sge_tempdir")`
 #' You can use `tempdir()` if all execution nodes have access to the same filesystem
 #' as the submit node.
 #' @param verbosity Integer: Verbosity level.
@@ -50,7 +49,7 @@ sge_submit <- function(
   packages = NULL,
   queue = NULL,
   n_workers = 4,
-  sge_out = file.path(getwd(), "./sge_out"),
+  sge_out = file.path(tempdir(), "./sge_out"),
   sge_error = sge_out,
   sge_env = "#! /usr/bin/env bash",
   sge_opts = "#$ -cwd",
@@ -58,7 +57,7 @@ sge_submit <- function(
   system_command = NULL,
   h_rt = "00:25:00",
   mem_free = NULL,
-  temp_dir = file.path(getwd(), ".sge_tempdir"),
+  temp_dir = file.path(tempdir(), ".sge_tempdir"),
   verbosity = 1L
 ) {
   expr <- as.character(as.expression(substitute(expr)))
