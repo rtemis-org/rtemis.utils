@@ -1,4 +1,4 @@
-Package: rtemisutils
+Package: rtemis.utils
 Version: 0.1.0
 Title: Shared Utilities for Rtemis Packages
 Date: 2026-02-01
@@ -9,7 +9,7 @@ Description: Includes a collection of type-checking and text-formatting utilitie
     imported by other rtemis packages.
 License: GPL (>= 3)
 URL: https://www.rtemis.org
-BugReports: https://github.com/rtemis-org/rtemisutils/issues
+BugReports: https://github.com/rtemis-org/rtemis.utils/issues
 ByteCompile: yes
 Depends:
     R (>= 4.1.0)
