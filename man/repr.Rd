@@ -12,10 +12,6 @@ Character string representation of the object.
 \description{
 String representation
 }
-\details{
-Exported as internal function for use by other rtemis packages.
-}
 \author{
 EDG
 }
-\keyword{internal}
