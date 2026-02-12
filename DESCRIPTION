@@ -32,6 +32,8 @@ Suggests:
     igraph,
     parallelly,
     plotly,
+    psych,
+    pvclust,
     reactable,
     reticulate,
     seqinr,
