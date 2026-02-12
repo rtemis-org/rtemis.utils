@@ -10,7 +10,7 @@ A named list with the following elements:
 \item{rt_red}{"kaimana red"}
 \item{rt_blue}{"kaimana light blue"}
 \item{rt_green}{"kaimana medium green"}
-\item{rt_orange}{"genlib orange"}
+\item{rt_orange}{"coastside orange"}
 \item{rt_teal}{"rtemis teal"}
 \item{rt_purple}{"rtemis purple"}
 \item{rt_magenta}{"rtemis magenta"}
@@ -18,7 +18,7 @@ A named list with the following elements:
 \item{col_object}{"rtemis teal"}
 \item{col_info}{"lmd burgundy"}
 \item{col_outer}{"kaimana red"}
-\item{col_tuner}{"genlib orange"}
+\item{col_tuner}{"coastside orange"}
 }
 }
 \usage{
@@ -34,6 +34,7 @@ Colors are provided as hex strings.
 \examples{
 rtemis_colors[["rt_teal"]]
 
+rtemis_colors[["teal"]]
 }
 \author{
 EDG

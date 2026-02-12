@@ -1,6 +1,6 @@
 # rtemis color system
 # ::rtemis.utils::
-# 2025 EDG rtemis.org
+# 2025- EDG rtemis.org
 
 # Violet: Class names (structure)
 # Blue: Outer resampling (evaluation)
@@ -22,7 +22,7 @@ rtemis_teal <- "#00b2b2"
 kaimana_red <- "#ff004c"
 kaimana_blue <- "#0067e0"
 kaimana_light_blue <- "#479cff"
-genlib_orange <- "#ff9f20"
+coastside_orange <- "#ff9f20"
 kaimana_green <- "#00ffb3"
 kaimana_med_green <- "#00996b"
 rtemis_purple <- "#6125f7"
@@ -34,7 +34,7 @@ lmd_burgundy <- "#a92459"
 rt_red <- kaimana_red
 rt_blue <- kaimana_light_blue
 rt_green <- kaimana_med_green
-rt_orange <- genlib_orange
+rt_orange <- coastside_orange
 rt_teal <- rtemis_teal
 rt_purple <- rtemis_purple
 rt_magenta <- rtemis_magenta
@@ -43,7 +43,7 @@ highlight_col <- rt_teal
 col_object <- rt_teal
 col_info <- highlight2_col <- lmd_burgundy
 col_outer <- rt_red
-col_tuner <- rt_orange # genlib orange
+col_tuner <- rt_orange # coastside orange
 
 
 #' rtemis Color System
@@ -58,7 +58,7 @@ col_tuner <- rt_orange # genlib orange
 #'   \item{rt_red}{"kaimana red"}
 #'   \item{rt_blue}{"kaimana light blue"}
 #'   \item{rt_green}{"kaimana medium green"}
-#'   \item{rt_orange}{"genlib orange"}
+#'   \item{rt_orange}{"coastside orange"}
 #'   \item{rt_teal}{"rtemis teal"}
 #'   \item{rt_purple}{"rtemis purple"}
 #'   \item{rt_magenta}{"rtemis magenta"}
@@ -66,7 +66,7 @@ col_tuner <- rt_orange # genlib orange
 #'   \item{col_object}{"rtemis teal"}
 #'   \item{col_info}{"lmd burgundy"}
 #'   \item{col_outer}{"kaimana red"}
-#'   \item{col_tuner}{"genlib orange"}
+#'   \item{col_tuner}{"coastside orange"}
 #' }
 #'
 #' @examples
@@ -76,17 +76,19 @@ col_tuner <- rt_orange # genlib orange
 #'
 #' @export
 #'
+#' @examples
+#' rtemis_colors[["teal"]]
 rtemis_colors <- list(
-  rt_red = rt_red,
-  rt_blue = rt_blue,
-  rt_green = rt_green,
-  rt_orange = rt_orange,
-  rt_teal = rt_teal,
-  rt_purple = rt_purple,
-  rt_magenta = rt_magenta,
+  red = rt_red,
+  blue = rt_blue,
+  green = rt_green,
+  orange = rt_orange,
+  teal = rt_teal,
+  purple = rt_purple,
+  magenta = rt_magenta,
   highlight_col = highlight_col,
-  col_object = col_object,
-  col_info = col_info,
-  col_outer = col_outer,
-  col_tuner = col_tuner
+  object = col_object,
+  info = col_info,
+  outer = col_outer,
+  tuner = col_tuner
 ) # /rtemis.utils::rtemis_colors

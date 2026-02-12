@@ -146,31 +146,45 @@ color_txt_rows <- function(
 
 #' pkglogo
 #'
+#' Display a colored ASCII logo for a package from its inst/resources directory.
+#'
 #' @param pkg Character: Package name.
-#' @param filename Character: Filename of the logo file (without path).
+#' @param filename Character: Filename of the logo file (without path). If NULL,
+#'   defaults to "<pkg>.utf8".
 #' @param fmt_fn Function: "color_txt_columns", "color_text_rows" Formatting function to apply to
-#' the logo text.
+#'   the logo text.
 #' @param args List: Arguments to pass to `fmt_fn`.
 #' @param pad Integer: Left-pad output with this many spaces.
 #'
 #' @return Character: Formatted logo text.
 #'
 #' @author EDG
-#' @keywords internal
-#' @noRd
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' # In .onAttach() function:
+#' .onAttach <- function(libname, pkgname) {
+#'   packageStartupMessage(pkglogo(pkg = pkgname))
+#' }
+#' }
 pkglogo <- function(
-  pkg = .packageName,
-  filename = paste0(pkg, ".utf8"),
+  pkg,
+  filename = NULL,
   fmt_fn = color_txt_columns,
   args = list(
-    color_left = kaimana_blue,
-    color_right = kaimana_green,
+    color_left = rtemis_colors[["red"]],
+    color_right = rtemis_colors[["orange"]],
     output_type = "ansi"
   ),
-  pad = 2L
+  pad = 0L
 ) {
+  # Set default filename if not provided
+  if (is.null(filename)) {
+    filename <- paste0(pkg, ".utf8")
+  }
   logo_file <- system.file(
-    package = .packageName,
+    package = pkg,
     "resources",
     filename
   )
@@ -181,120 +195,6 @@ pkglogo <- function(
     collapse = "\n"
   )
 } # /rtemis.utils::pkglogo
-
-
-# Read UTF-8 strings from file, because R files should be ASCII-only.
-
-## rtemis.utf8
-rtaart <- local({
-  lines <- NULL
-  function() {
-    if (is.null(lines)) {
-      file <- system.file(
-        package = .packageName,
-        "resources",
-        "rtemis.utf8"
-      )
-      bfr <- readLines(file)
-      cols <- c(92, 128, 196, 208, 27)
-      lines <<- mapply(bfr, cols, FUN = col256)
-    }
-    lines
-  }
-})
-
-## rtemis.utf8
-rtlogo1 <- local({
-  paste0(
-    "  ",
-    mapply(
-      col256,
-      readLines(system.file(
-        package = .packageName,
-        "resources",
-        "rtemis.utf8"
-      )),
-      col = c(92, 128, 196, 208, 27)
-    ),
-    collapse = "\n"
-  )
-})
-
-#' rtascii
-#'
-#' @author EDG
-#' @keywords internal
-#' @noRd
-rtascii <- function() {
-  cat(rtaart(), sep = "\n")
-}
-
-#' rtasciitxt
-#'
-#' @author EDG
-#' @keywords internal
-#' @noRd
-rtasciitxt <- function() {
-  paste(paste0(paste0("  ", rtaart(), "\n")), collapse = "")
-}
-
-#' rtlogo2
-#'
-#' @author EDG
-#' @keywords internal
-#' @noRd
-# Read rtemis2.utf8 and apply color_txt_columns()
-rtlogo2 <- paste0(
-  color_txt_columns(
-    readLines(system.file(
-      package = .packageName,
-      "resources",
-      "rtemis2.utf8"
-    )),
-    color_left = rt_purple,
-    color_right = kaimana_green,
-    output_type = "ansi"
-  ),
-  collapse = "\n"
-) # /rtemis.utils::rtlogo2
-
-#' rtlogo3
-#'
-#' Uses the original ascii art
-#'
-#' @author EDG
-#' @keywords internal
-#' @noRd
-rtlogo3 <- paste0(
-  "  ",
-  color_txt_columns(
-    readLines(system.file(
-      package = .packageName,
-      "resources",
-      "rtemis.utf8"
-    )),
-    color_left = rt_red,
-    color_right = rt_orange,
-    output_type = "ansi"
-  ),
-  collapse = "\n"
-) # /rtemis.utils::rtlogo3
-
-
-fmtlogo <- paste0(
-  "  ",
-  color_txt_rows(
-    readLines(system.file(
-      package = .packageName,
-      "resources",
-      "fmt.utf8"
-    )),
-    color_top = kaimana_blue,
-    color_bottom = kaimana_green,
-    output_type = "ansi"
-  ),
-  collapse = "\n"
-) # /fmt::fmtlogo
 
 
 #' Show colors
