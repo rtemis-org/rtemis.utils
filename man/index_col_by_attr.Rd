@@ -4,14 +4,16 @@
 \alias{index_col_by_attr}
 \title{Index columns by attribute name & value}
 \usage{
-index_col_by_attr(x, key, value, exact = TRUE)
+index_col_by_attr(x, name, value, exact = TRUE)
 }
 \arguments{
 \item{x}{data.frame or similar.}
 
+\item{name}{Character: Name of attribute.}
+
 \item{value}{Character: Value of attribute.}
 
-\item{name}{Character: Name of attribute.}
+\item{exact}{Logical: If TRUE, use exact matching for attribute name.}
 }
 \value{
 Integer vector.
