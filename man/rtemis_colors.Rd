@@ -9,6 +9,7 @@ A named list with the following elements:
 \describe{
 \item{rt_red}{"kaimana red"}
 \item{rt_blue}{"kaimana light blue"}
+\item{rt_light_green}{"kaimana green"}
 \item{rt_green}{"kaimana medium green"}
 \item{rt_orange}{"coastside orange"}
 \item{rt_teal}{"rtemis teal"}

@@ -33,6 +33,7 @@ lmd_burgundy <- "#a92459"
 
 rt_red <- kaimana_red
 rt_blue <- kaimana_light_blue
+rt_light_green <- kaimana_green
 rt_green <- kaimana_med_green
 rt_orange <- coastside_orange
 rt_teal <- rtemis_teal
@@ -57,6 +58,7 @@ col_tuner <- rt_orange # coastside orange
 #' \describe{
 #'   \item{rt_red}{"kaimana red"}
 #'   \item{rt_blue}{"kaimana light blue"}
+#'   \item{rt_light_green}{"kaimana green"}
 #'   \item{rt_green}{"kaimana medium green"}
 #'   \item{rt_orange}{"coastside orange"}
 #'   \item{rt_teal}{"rtemis teal"}
@@ -81,6 +83,7 @@ col_tuner <- rt_orange # coastside orange
 rtemis_colors <- list(
   red = rt_red,
   blue = rt_blue,
+  light_green = rt_light_green,
   green = rt_green,
   orange = rt_orange,
   teal = rt_teal,
