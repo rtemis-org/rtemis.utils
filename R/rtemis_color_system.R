@@ -43,6 +43,7 @@ rt_orange <- coastside_orange
 rt_teal <- rtemis_teal
 rt_purple <- rtemis_purple
 rt_magenta <- rtemis_light_magenta
+highlight_col <- coastside_orange
 
 
 #' rtemis Color System
