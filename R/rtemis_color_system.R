@@ -17,8 +17,8 @@
 # UTF-8 icons: https://www.utf8icons.com/
 
 rtemis_light_teal <- "#00fdfd"
-rtemis_light_blue <- "#30cefe"
 rtemis_teal <- "#00b2b2"
+rtemis_light_blue <- "#30cefe"
 kaimana_red <- "#ff004c"
 kaimana_blue <- "#0067e0"
 kaimana_light_blue <- "#479cff"
@@ -33,6 +33,8 @@ magenta <- "#ff00ff"
 lmd_burgundy <- "#a92459"
 rtms_gray <- "#808080"
 
+
+# %% internal colors ----
 rt_gray <- rtms_gray
 rt_red <- kaimana_red
 rt_blue <- kaimana_light_blue
@@ -41,14 +43,6 @@ rt_orange <- coastside_orange
 rt_teal <- rtemis_teal
 rt_purple <- rtemis_purple
 rt_magenta <- rtemis_light_magenta
-
-# %% rtemis colors ----
-highlight_col <- rt_orange
-col_object <- rt_gray # object name in repr_S7name
-col_info <- highlight2_col <- lmd_burgundy
-col_outer <- rt_green
-col_tuner <- rt_blue
-col_calibrator <- rt_magenta
 
 
 #' rtemis Color System
@@ -84,15 +78,15 @@ col_calibrator <- rt_magenta
 #' @examples
 #' rtemis_colors[["teal"]]
 rtemis_colors <- list(
-  red = rt_red,
+  red = kaimana_red,
   light_blue = kaimana_light_blue,
-  blue = rt_blue,
-  green = rt_green,
-  medium_green = kaimana_med_green,
-  orange = rt_orange,
+  blue = kaimana_blue,
+  light_green = kaimana_green,
+  green = kaimana_med_green,
+  orange = coastside_orange,
   light_teal = rtemis_light_teal,
-  teal = rt_teal,
-  purple = rt_purple,
+  teal = rtemis_teal,
+  purple = rtemis_purple,
   light_magenta = rtemis_light_magenta,
-  magenta = rt_magenta
+  magenta = rtemis_magenta
 ) # /rtemis.utils::rtemis_colors
