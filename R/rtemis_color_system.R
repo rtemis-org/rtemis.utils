@@ -23,28 +23,32 @@ kaimana_red <- "#ff004c"
 kaimana_blue <- "#0067e0"
 kaimana_light_blue <- "#479cff"
 coastside_orange <- "#ff9f20"
+rtemis_orange <- "#ff4f36"
 kaimana_green <- "#00ffb3"
 kaimana_med_green <- "#00996b"
 rtemis_purple <- "#6125f7"
 rtemis_magenta <- "#912ac8"
-rtemis_magenta_light <- "#b25bd6"
+rtemis_light_magenta <- "#b25bd6"
 magenta <- "#ff00ff"
 lmd_burgundy <- "#a92459"
+rtms_gray <- "#808080"
 
+rt_gray <- rtms_gray
 rt_red <- kaimana_red
 rt_blue <- kaimana_light_blue
-rt_light_green <- kaimana_green
 rt_green <- kaimana_med_green
 rt_orange <- coastside_orange
 rt_teal <- rtemis_teal
 rt_purple <- rtemis_purple
-rt_magenta <- rtemis_magenta
+rt_magenta <- rtemis_light_magenta
 
-highlight_col <- rt_teal
-col_object <- rt_teal
+# %% rtemis colors ----
+highlight_col <- rt_orange
+col_object <- rt_gray # object name in repr_S7name
 col_info <- highlight2_col <- lmd_burgundy
-col_outer <- rt_red
-col_tuner <- rt_orange # coastside orange
+col_outer <- rt_green
+col_tuner <- rt_blue
+col_calibrator <- rt_magenta
 
 
 #' rtemis Color System
@@ -56,23 +60,22 @@ col_tuner <- rt_orange # coastside orange
 #'
 #' @format A named list with the following elements:
 #' \describe{
-#'   \item{rt_red}{"kaimana red"}
-#'   \item{rt_blue}{"kaimana light blue"}
-#'   \item{rt_light_green}{"kaimana green"}
-#'   \item{rt_green}{"kaimana medium green"}
-#'   \item{rt_orange}{"coastside orange"}
-#'   \item{rt_teal}{"rtemis teal"}
-#'   \item{rt_purple}{"rtemis purple"}
-#'   \item{rt_magenta}{"rtemis magenta"}
-#'   \item{highlight_col}{"rtemis teal"}
-#'   \item{col_object}{"rtemis teal"}
-#'   \item{col_info}{"lmd burgundy"}
-#'   \item{col_outer}{"kaimana red"}
-#'   \item{col_tuner}{"coastside orange"}
+#'   \item{red}{"kaimana red"}
+#'   \item{blue}{"kaimana light blue"}
+#'   \item{green}{"kaimana medium green"}
+#'   \item{orange}{"coastside orange"}
+#'   \item{teal}{"rtemis teal"}
+#'   \item{purple}{"rtemis purple"}
+#'   \item{magenta}{"rtemis magenta"}
+#'   \item{highlight_col}{"highlight color"}
+#'   \item{object}{"rtemis teal"}
+#'   \item{info}{"lmd burgundy"}
+#'   \item{outer}{"kaimana red"}
+#'   \item{tuner}{"coastside orange"}
 #' }
 #'
 #' @examples
-#' rtemis_colors[["rt_teal"]]
+#' rtemis_colors[["orange"]]
 #'
 #' @author EDG
 #'
@@ -82,16 +85,14 @@ col_tuner <- rt_orange # coastside orange
 #' rtemis_colors[["teal"]]
 rtemis_colors <- list(
   red = rt_red,
+  light_blue = kaimana_light_blue,
   blue = rt_blue,
-  light_green = rt_light_green,
   green = rt_green,
+  medium_green = kaimana_med_green,
   orange = rt_orange,
+  light_teal = rtemis_light_teal,
   teal = rt_teal,
   purple = rt_purple,
-  magenta = rt_magenta,
-  highlight_col = highlight_col,
-  object = col_object,
-  info = col_info,
-  outer = col_outer,
-  tuner = col_tuner
+  light_magenta = rtemis_light_magenta,
+  magenta = rt_magenta
 ) # /rtemis.utils::rtemis_colors
