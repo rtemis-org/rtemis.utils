@@ -399,12 +399,12 @@ repr_S7name <- function(
   output_type <- get_output_type(output_type)
   paste0(
     strrep(" ", pad),
-    gray("<", output_type = output_type),
+    fmt("<", col = col, output_type = output_type),
     if (!is.null(prefix)) {
       gray(prefix, output_type = output_type)
     },
-    fmt(x, col = col, bold = TRUE, output_type = output_type),
-    gray(">", output_type = output_type),
+    fmt(x, bold = TRUE, output_type = output_type),
+    fmt(">", col = col, output_type = output_type),
     "\n"
   )
 } # /rtemis.utils::repr_S7name
