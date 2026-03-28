@@ -178,7 +178,8 @@ clean_int <- function(x, xname = deparse(substitute(x))) {
     return(x)
   } else if (is.numeric(x)) {
     if (all(x %% 1 == 0)) {
-      return(as.integer(x))
+      storage.mode(x) <- "integer"
+      return(x)
     } else {
       cli::cli_abort("{.var {xname}} must be integer.")
     }
